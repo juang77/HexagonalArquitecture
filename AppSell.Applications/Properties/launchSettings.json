@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AppSell.Applications": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

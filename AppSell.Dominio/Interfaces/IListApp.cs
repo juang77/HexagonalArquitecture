@@ -2,7 +2,7 @@
 
 public interface IListApp<IEntity, TEntityID>
 {
-    List<IEntity> List();
+    List<IEntity> ListApp();
 
     IEntity SelectById(TEntityID entityID);
 }
