@@ -18,8 +18,4 @@
     <ProjectReference Include="..\AppSell.Dominio\AppSell.Dominio.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Context\" />
-  </ItemGroup>
-
 </Project>

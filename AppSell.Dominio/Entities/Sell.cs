@@ -16,5 +16,7 @@ public class Sell
 
     public decimal totalSell { get; set; }
 
+    public bool Canceled { get; set; }
+
     public List<SellDetail> sellDetails { get; set; }
 }
