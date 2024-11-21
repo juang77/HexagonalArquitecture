@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSell.Dominio", "AppSell.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSell.Applications", "AppSell.Applications\AppSell.Applications.csproj", "{34681C61-4536-47CB-B469-61A6D06D08BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSell.Infraestructure.Data", "AppSell.Infraestructure.Data\AppSell.Infraestructure.Data.csproj", "{F86A0069-47AF-4B5F-90D8-4EC51366FAE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{34681C61-4536-47CB-B469-61A6D06D08BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34681C61-4536-47CB-B469-61A6D06D08BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34681C61-4536-47CB-B469-61A6D06D08BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86A0069-47AF-4B5F-90D8-4EC51366FAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86A0069-47AF-4B5F-90D8-4EC51366FAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86A0069-47AF-4B5F-90D8-4EC51366FAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86A0069-47AF-4B5F-90D8-4EC51366FAE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
