@@ -15,7 +15,7 @@ public class SellContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(@"Data Source = localhost; Initial Catalog = SellsDB; Integrated Security = true;");
+        optionsBuilder.UseSqlServer(@"Data Source = localhost; Initial Catalog = SellsDB; Integrated Security = true; TrustServerCertificate = True; TrustServerCertificate = True;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

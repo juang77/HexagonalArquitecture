@@ -1,0 +1,6 @@
+@AppSel.Infraestructure.API_HostAddress = http://localhost:5070
+
+GET {{AppSel.Infraestructure.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -4,7 +4,7 @@ using AppSell.Infraestructure.Data.Context;
 
 namespace AppSell.Infraestructure.Data.Repositories
 {
-    internal class SellDetailRepository : IRepositorySellDetail<SellDetail, Guid>
+    public class SellDetailRepository : IRepositorySellDetail<SellDetail, Guid>
     {
         private SellContext _db;
 

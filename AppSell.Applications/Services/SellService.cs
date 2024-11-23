@@ -31,22 +31,19 @@ namespace AppSell.Applications.Services
                 if (selectedProduct == null)
                     throw new ArgumentNullException("Product is Required");
 
-                var newDetail = new SellDetail();
-                newDetail.sellId = detail.sellId;
-                newDetail.productId = detail.productId;
-                newDetail.unitCost = selectedProduct.cost;
-                newDetail.unitPrice = selectedProduct.prise;
-                newDetail.sellCuantity = detail.sellCuantity;
-                newDetail.subTotalDS = newDetail.unitPrice * newDetail.sellCuantity;
-                newDetail.taxDS = (newDetail.subTotalDS * 19) / 100;
-                newDetail.totalDS = newDetail.subTotalDS + newDetail.taxDS;
-                _repositorySellDetail.Add(newDetail);
+                detail.unitCost = selectedProduct.cost;
+                detail.unitPrice = selectedProduct.prise;
+                detail.sellCuantity = detail.sellCuantity;
+                detail.subTotalDS = detail.unitPrice * detail.sellCuantity;
+                detail.taxDS = (detail.subTotalDS * 19) / 100;
+                detail.totalDS = detail.subTotalDS + detail.taxDS;
+                _repositorySellDetail.Add(detail);
 
-                selectedProduct.stock -= newDetail.sellCuantity;
+                selectedProduct.stock -= detail.sellCuantity;
                 _repositoryProduct.Edit(selectedProduct);
-                entity.subTotalSell += newDetail.subTotalDS;
-                entity.taxSell += newDetail.taxDS;
-                entity.totalSell += newDetail.totalDS;
+                entity.subTotalSell += detail.subTotalDS;
+                entity.taxSell += detail.taxDS;
+                entity.totalSell += detail.totalDS;
             });
             _repositorySell.SaveAll();
             return entity;
